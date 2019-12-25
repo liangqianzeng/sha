@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    
+</head>
+<body>
+
+  <!-- nav 导航 -->
+    <nav class=" navbar  navbar-inverse navbar-fixed-top" >
+      <div class=" container">
+        <div class=" navbar-header">
+              <button class=" navbar-toggle" data-toggle="collapse" data-target="#zhedie">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="" class=" navbar-brand" > 也许べ已没有也许</a>
+
+        </div>
+
+        <div class="collapse  navbar-collapse " id="zhedie">
+          <ul class=" nav navbar-nav">
+            <li class=" active"><a href="#">首页</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">同年壁纸 <b class=" caret"> </b></a>
+
+                <ul class="dropdown-menu" id="list">
+                  <li><a href="#">哆啦A梦</a></li>
+                  <li><a href="#">阿童木</a></li>
+                  <li><a href="#">超级玛丽</a></li>
+                  <li><a href="#">可爱的大白</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">壁纸大全</a></li>
+            <li><a href="#">关于</a></li> 
+          </ul>
+
+          <ul class=" nav  navbar-nav navbar-right">
+              <li class=" hidden-xs  hidden-sm "><a href="#">登陆</a></li>
+              <li class=" hidden-xs hidden-sm"><a href="#">注册</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators 小圆点 -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+      
+        <!-- Wrapper for slides 轮播图片 -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/banner1 (2).jpg" alt="第一张">
+            <div class="carousel-caption">
+                <h1>最美壁纸</h1>
+                <p>这张壁纸是小笑残虹同学精心挑选的高清壁纸</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/banner2 .jpg" alt="第二张">
+            <div class="carousel-caption">
+                <h1>最美壁纸</h1>
+                <p>这张壁纸是小笑残虹同学精心挑选的高清壁纸</p>
+            </div>
+          </div>
+        
+          <div class="item">
+              <img src="img/banner3.jpg" alt="第三张">
+              <div class="carousel-caption">
+                  <h1>最美壁纸</h1>
+                  <p>这张壁纸是小笑残虹同学精心挑选的高清壁纸</p>
+
+              </div>
+            </div>
+            <div class="item">
+                <img src="img/banner4.jpg" alt="第四张">
+                <div class="carousel-caption">
+                    <h1>最美壁纸</h1>
+                    <p>这张壁纸是小笑残虹同学精心挑选的高清壁纸</p>
+                </div>
+              </div>
+
+        </div>
+    
+        <!-- Controls  左右箭头 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <script>
+        $('.carousel').carousel({
+          interval: 2000
+              })
+      </script>
+    
+    <!-- 水平线 -->
+    <hr class="divider"> 
+  <!-- 4栏布局 -->
+    <div class=" container">
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="img/大白啊.png" alt="...">
+            <div class="caption text-center " id="silanbuju">
+              <h3>大白</h3>
+              <p>大白，是电影《超能陆战队》及动画《大白归来》中登场的虚拟人物，是一个体型胖嘟嘟的充气型智能机器人。</p>
+              <p><a href="#" class="btn btn-primary" role="button">点击查看</a> </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="img/机器猫啊.png" alt="...">
+              <div class="caption text-center " id="silanbuju">
+                <h3>哆啦A梦</h3>
+                <p>哆啦A梦，来自未来世界（22世纪）的蓝色猫型机器人，身上的四次元百宝袋装有许多道具，为改变大雄的命运而来。</p>
+                <p><a href="#" class="btn btn-primary" role="button">点击查看</a> </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="img/玛丽踢球.png" alt="...">
+                <div class="caption text-center " id="silanbuju">
+                  <h3>超级玛丽</h3>
+                  <p>马里奥是站在游戏界顶峰的超人气多面角色。马里奥靠吃蘑菇成长，特征是大鼻子、头戴帽子、身穿背带裤，还留着胡子。</p>
+                  <p><a href="#" class="btn btn-primary" role="button">点击查看</a> </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="img/大白啊.png" alt="...">
+                  <div class="caption text-center " id="silanbuju">
+                    <h3>大白</h3>
+                    <p>大白，是电影《超能陆战队》及动画《大白归来》中登场的虚拟人物，是一个体型胖嘟嘟的充气型智能机器人。</p>
+                    <p><a href="#" class="btn btn-primary" role="button">点击查看</a> </p>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+    </div>
+    <!-- 水平线 -->
+    <hr class="divider">
+
+    
+   
+  <!-- Nav tabs 标签页 -->
+    <div class=" container">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">超级玛丽</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">可爱的大白</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">阿童木</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">哆啦A梦</a></li>
+      </ul>
+    </div>
+
+  <!-- Tab panes  标签页下面的内容-->
+    <div class=" container"  >
+      <div class="tab-content " >
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <h2>超级玛丽 <small>同年的乐趣</small></h2>
+          <p>超级玛丽，全名"超级马里奥兄弟"，是任天堂公司出品的著名横版游戏。最早在红白机上推出，有多款后续作品，迄今多个版本合共销量已突破4000万套。 其中的主角马里奥、路易、碧琪公主、奇诺比奥等等已成为任天堂的招牌人物。马里奥是站在游戏界顶峰的超人气多面角色。 马里奥靠吃蘑菇成长，特征是大鼻子、头戴帽子、身穿背带裤，还留着胡子。 与他的双胞胎兄弟路易基一起，长年担任任天堂的招牌角色。</p>  
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="profile">
+          <h2>大白 <small> 也有一颗超人的心</small></h2>
+          <p>大白，是电影《超能陆战队》中登场的虚拟人物。他是一个体型胖嘟嘟的充气充电型机器人，因呆萌的外表和善良的本质获得大家的喜爱，被称为“萌神”、“守护性暖男”。大白，2014年在北美上映的动画电影《超能陆战队》中的主要角色，被称为“萌神”。</p>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="messages">
+          <h2>阿童木 <small>童年小英雄阿童木</small></h2>
+          <p>铁臂阿童木》（日文原名：鉄腕アトム，英文译名：Astroboy或Tetsuwan Atom，又被翻译成《原子小金刚》）是日本漫画家手冢治虫创作的一部科幻漫画作品，于1952年至1968年于“光文社”的《少年》漫画杂志连载。该作品讲述了未来21世纪的少年机器人阿童木的故事。该作品先后多次被改编为动画，其中1963版第一版电视动画是日本第一部电视连续动画，也是中国引进的第一部国外动画。1951年4月，《阿童木大使》开始连载。1961年，手冢治虫创办了虫制作公司，首先把《铁臂阿童木》制成动画，从1963年元旦起在电视台播放。</p>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="settings">
+
+          <h2>哆啦A梦 <small>多少人童年的梦想</small></h2>
+          <p>大山版《哆啦A梦》（ドラえもん）是朝日电视台（ANB）根据藤子F不二雄的漫画《哆啦A梦》改编制作的第二版同名动画。该动画于1979年4月2日起首播，在东京时间每日19:00-19:30（北京时间18:00-18:30）段播放，于2005年3月18日全部放映完毕并停止制作，接档版本为朝日电视台水田版《哆啦A梦》</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+   <!-- 四张图片  哆啦A梦 -->
+
+   <div class=" container">
+
+    <div class="duolaameng">
+      <div class="row" id="jiqimao">
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/机器猫1.jpg" alt="...">
+          </a>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/机器猫2.jpg" alt="...">
+          </a>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/机器猫3.jpg" alt="...">
+          </a>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/机器猫1.jpg" alt="...">
+          </a>
+        </div>
+        <!-- 玛丽 -->
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/玛丽1.jpg" alt="...">
+          </a>
+        </div>
+  
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/玛丽2.jpg" alt="...">
+          </a>
+        </div>
+  
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/玛丽3.png" alt="...">
+          </a>
+        </div>
+  
+  
+        <div class="col-xs-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img src="img/玛丽1.jpg" alt="...">
+          </a>
+        </div>
+  
+      </div>
+    </div>
+   </div>
+
+
+   <hr class="divider">
+
+   <!-- 地图 -->
+    <div class=" container">
+      <div class=" map">
+        <head>
+          <!--引用百度地图API-->
+          <style type="text/css">
+             html,body{margin:0;padding:0;}
+             .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+             .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+          </style>
+          <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+          </head>
+          <body>
+          <!--百度地图容器-->
+           <div style="width:100%;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
+          <script type="text/javascript">
+             //创建和初始化地图函数：
+             function initMap(){
+                 createMap();//创建地图
+                 setMapEvent();//设置地图事件
+                 addMapControl();//向地图添加控件
+                 addMarker();//向地图中添加marker
+             }
+             
+             //创建地图函数：
+             function createMap(){
+                 var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                 var point = new BMap.Point(115.550822,38.873954);//定义一个中心点坐标
+                 map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+                 window.map = map;//将map变量存储在全局
+             }
+             
+             //地图事件设置函数：
+             function setMapEvent(){
+                 map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                 map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                 map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                 map.enableKeyboard();//启用键盘上下左右键移动地图
+             }
+             
+             //地图控件添加函数：
+             function addMapControl(){
+                 //向地图中添加缩放控件
+          var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+          map.addControl(ctrl_nav);
+                 //向地图中添加缩略图控件
+          var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+          map.addControl(ctrl_ove);
+                 //向地图中添加比例尺控件
+          var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+          map.addControl(ctrl_sca);
+             }
+             
+             //标注点数组
+             var markerArr = [{title:"我的学校",content:"电话：0791-88117053<br/>手机：15079002975",point:"115.550822|38.873954",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+            ];
+             //创建marker
+             function addMarker(){
+                 for(var i=0;i<markerArr.length;i++){
+                     var json = markerArr[i];
+                     var p0 = json.point.split("|")[0];
+                     var p1 = json.point.split("|")[1];
+                     var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+                     var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+                     map.addOverlay(marker);
+                     label.setStyle({
+                                 borderColor:"#808080",
+                                 color:"#333",
+                                 cursor:"pointer"
+                     });
+            
+            (function(){
+             var index = i;
+             var _iw = createInfoWindow(i);
+             var _marker = marker;
+             _marker.addEventListener("click",function(){
+                 this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                 _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                 _marker.getLabel().show();
+                })
+             label.addEventListener("click",function(){
+                 _marker.openInfoWindow(_iw);
+                })
+             if(!!json.isOpen){
+              label.hide();
+              _marker.openInfoWindow(_iw);
+             }
+            })()
+                 }
+             }
+             //创建InfoWindow
+             function createInfoWindow(i){
+                 var json = markerArr[i];
+                 var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                 return iw;
+             }
+             //创建一个Icon
+             function createIcon(json){
+                 var icon = new BMap.Icon("http://map.baidu.com/image/us_cursor.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                 return icon;
+             }
+             
+             initMap();//创建和初始化地图
+          </script>
+          </body>
+          <!-- //标注点数组：更改名称 电话
+           //创建地图函数：更改中心点 -->
+      </div>
+        
+    </div>
+
+   
+
+   <!-- 底部 -->
+
+    <div class=" container-fluid" >
+
+      <div class=" container" id="footer">
+        
+
+        <div class=" row">
+
+          <ul class="footer text-center" >
+            <li><a href="#">服务热线：400-400-400</a></li>
+            <li><a href="#">联系电话：17113456245</a></li>
+            <li><a href="#">电子邮箱:1235643@qq.com</a></li>
+            <li><a href="#">地址:河北软件职业技术学院</a></li>
+            
+
+            
+          </ul>
+          
+        </div>
+      </div>
+
+
+      
+    </div>
+
+    
+    
+
+<br>
+<br>
+<br>
+<br>
+
+
+    
+</body>
+</html>
